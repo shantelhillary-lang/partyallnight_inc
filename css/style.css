@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.hero{
+    height: 90vh;
+    background: url('../images/event.jpg') center/cover no-repeat;
+}
+
+footer{
+    margin-top: 50px;
+}
