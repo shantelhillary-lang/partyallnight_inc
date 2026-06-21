@@ -1,12 +1,94 @@
-body{
-    font-family: Arial, sans-serif;
+.card, .bg-dark.border-secondary {
+  color: #e0e0e0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) ;
+  transition: all 0.3s ease-in-out;
 }
 
-.hero{
-    height: 90vh;
-    background: url('../images/event.jpg') center/cover no-repeat;
+.card p, .text-muted {
+    color: #b3b3b3 !important;
+
 }
 
-footer{
-    margin-top: 50px;
+:root {
+  --primary-neon: #ff007f;    /* Hot Pink Accent */
+  --secondary-neon: #7b2cbf;  /* Deep Purple Ambient */
+  --accent-orange: #ff6b35;   /* The custom button color */
+  --dark-bg: #0b090a;         /* Deep rich dark background */
+  --card-bg: #0c0202;         /* Subtle lighter gray for cards */
+}
+
+/* Global Reset & Body Setup */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--dark-bg) !important;
+  color: #ffffff !important;
+}
+
+/* Custom Navbar Style Overrides */
+.navbar {
+  background-color: #2d0235 !important;
+  border-bottom: 2px solid var(--secondary-neon);
+}
+
+.navbar-brand {
+  letter-spacing: 1.5px;
+}
+
+/* Hero Section Background Image Mapping */
+.hero {
+  min-height: 60vh;
+  /* Uses your uploaded file 'da clurb.jpeg' with an overlay so text stays readable */
+  background: linear-gradient(rgba(11, 9, 10, 0.7), rgba(11, 9, 10, 0.85)), 
+              url('../images/da clurb.jpeg') no-repeat center center/cover;
+  padding: 80px 0;
+}
+
+/* Custom Button Styling to resolve the btn-orange class */
+.btn-orange {
+  background-color: var(--accent-orange) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-orange:hover {
+  background-color: #e0531c !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+
+/* Feature & Event Grid Cards */
+.card, .bg-dark.border-secondary {
+  background-color: var(--card-bg) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .bg-dark.border-secondary:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-neon) !important;
+}
+
+/* Responsive Custom Image Configurations for Gallery/Events */
+.gallery-img, .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Sticky Footer alignment */
+footer {
+  background-color: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--primary-neon) !important;
 }
