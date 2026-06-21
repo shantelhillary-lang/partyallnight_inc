@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ShansiNC | Events</title>
+  <title>PARTYALLNIGHT | Events</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">ShansiNC</a>
+      <a class="navbar-brand fw-bold" href="index.html">PARTYALLNIGHT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,19 +31,70 @@
   </nav>
 
   <!-- PAGE HEADER -->
-  <section class="container py-5 text-center">
-    <h1 class="fw-bold">Upcoming Events</h1>
-    <p class="lead">Find a concert or festival near you.</p>
-  </section>
+  <header class="container py-5 text-center">
+    <h1 class="fw-bold text-warning display-4">Upcoming Events</h1>
+    <p class="lead text-light">Find a concert or festival near you.</p>
+  </header>
 
   <!-- EVENTS LIST -->
-  <section class="container pb-5">
+  <main class="container pb-5 flex-grow-1">
     <div class="row g-4">
 
       <div class="col-md-4">
-        <div class="card h-100">
+        <div class="card h-100 overflow-hidden bg-secondary bg-opacity-10 border border-secondary rounded">
+            <img src="images/mr money.jpeg" class="card-img-top" alt="Party All Night Concert">
           <div class="card-body">
-            <h5 class="card-title">Party All night</h5>
-            <p class="card-text">July 12, 2026 — Uhuru Gardens, Nairobi</p>
-            <p class="card-text">Experience the best of Kenyan music with top artists performing live.</p>
-            <a href="booking.html" class="btn btn-primary">Book Now</a>
+            <h5 class="card-title fw-bold text-warning">Party All night</h5>
+            <p class="card-text text-danger fw-semibold small mb-2">August 29, 2026 — Uhuru Gardens, Nairobi</p>
+            <p class="card-text text-light">Experience the best of Kenyan music with top artists performing live.</p>
+            <a href="booking.html" class="btn btn-orange w-100 mt-3">Book Now</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden bg-secondary bg-opacity-10 border border-secondary rounded">
+              <img src="images/masshouse.png" class="card-img-top gallery-img" alt="Da Clurb Festival">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold text-warning">Da Clurb Festival</h5>
+              <p class="card-text text-danger fw-semibold small mb-2">September 15, 2026 — Masshouse</p>
+              <p class="card-text text-light">A celebration of music, culture and vibes on vibes.</p>
+              <a href="booking.html" class="btn btn-orange w-100 mt-3">Book Now</a>
+              </div>
+          </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 overflow-hidden bg-secondary bg-opacity-10 border border-secondary rounded">
+                <img src="images/kamo.jpeg" class="card-img-top gallery-img" alt="Amampiano Night">
+              <div class="card-body p-4">
+                <h5 class="card-title fw-bold text-warning">Amapiano Night</h5>
+                <p class="card-text text-danger fw-semibold small mb-2">October 10, 2026 — Kamo, Nairobi</p>
+                <p class="card-text text-light">Dance to the rhythm of Amapiano with top artists and live performances.</p>
+                <a href="booking.html" class="btn btn-orange w-100 mt-3">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          </div>
+    </main>
+
+    <footer class="bg-black text-white text-center py-4 mt-auto border-top border-secondary">
+        <div class="container">
+      <p class="mb-1">&copy; 2026 PARTYALLNIGHT. All rights reserved.</p>
+      <p class="mb-0  small">
+        <a href="index.html" class="text-white text-decoration-none mx-2">Home</a> |
+        <a href="events.html" class="text-white text-decoration-none mx-2">Events</a> |
+        <a href="booking.html" class="text-white text-decoration-none mx-2">Booking</a> |
+        <a href="about.html" class="text-white text-decoration-none mx-2">About</a> |
+        <a href="gallery.html" class="text-white text-decoration-none mx-2">Gallery</a> |
+        <a href="faq.html" class="text-white text-decoration-none mx-2">FAQ</a> |
+        <a href="support.html" class="text-white text-decoration-none mx-2">Support</a>
+        </p>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+
+</body>
+</html>
