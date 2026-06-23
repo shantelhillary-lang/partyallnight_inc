@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PARTYALLNIGHT | Booking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">PARTYALLNIGHT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BOOKING CONTENT -->
+  <main class="container py-5 flex-grow-1" style="max-width: 650px;">
+    <div class="text-center mb-4">
+      <h1 class="fw-bold text-warning">Secure Your Entry Pass</h1>
+      <p class="lead text-muted">Fill out your information below to instantly lock in your ticket.</p>
+    </div>
+
+    <!-- Booking Form wrapped in our modern theme card container -->
+    <div class="p-4 p-md-5 rounded bg-secondary bg-opacity-10 border border-secondary card">
+      <form action="#" method="POST" id="bookingForm">
+        
+        <!-- Full Name -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label text-warning small fw-bold">Full Name</label>
+          <input type="text" class="form-input form-control bg-black text-white border-secondary" id="fullName" placeholder="e.g. John Doe" required>
+        </div>
+
+        <!-- Email Address -->
+        <div class="mb-3">
+          <label for="emailAddr" class="form-label text-warning small fw-bold">Email Address</label>
+          <input type="email" class="form-input form-control bg-black text-white border-secondary" id="emailAddr" placeholder="name@example.com" required>
+          <div class="form-text text-muted" style="font-size: 0.8rem;">Your e-ticket secure code will be emailed here.</div>
+        </div>
+
+        <!-- Event Selection -->
+        <div class="mb-3">
+          <label for="eventSelect" class="form-label text-warning small fw-bold">Select Event</label>
+          <select class="form-select bg-black text-white border-secondary" id="eventSelect" required>
+            <option value="" disabled selected>Choose an upcoming event...</option>
+            <option value="fest">Party All Night Festival — Uhuru Gardens</option>
+            <option value="mass">MassHouse Weekly Fridays — Electronic Arena</option>
+            <option value="kamo">Kamo Soundstage Showdown — Culture Center</option>
+          </select>
+        </div>
+
+        <!-- Pass Type and Quantity -->
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6">
+            <label for="ticketType" class="form-label text-warning small fw-bold">Pass Tier</label>
+            <select class="form-select bg-black text-white border-secondary" id="ticketType" required>
+              <option value="regular">Regular Access</option>
+              <option value="vip">VIP Backstage Pass</option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <label for="ticketQty" class="form-label text-warning small fw-bold">Quantity</label>
+            <input type="number" class="form-control bg-black text-white border-secondary" id="ticketQty" min="1" max="10" value="1" required>
+          </div>
+        </div>
+
+        <!-- Preferred Payment Gateway Selection -->
+        <div class="mb-4">
+          <label class="form-label text-warning small fw-bold d-block mb-2">Payment Method</label>
+          <div class="form-check form-check-inline me-4">
+            <input class="form-check-input" type="radio" name="payMethod" id="payMpesa" value="mpesa" checked>
+            <label class="form-check-label text-light" for="payMpesa">M-Pesa</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="payMethod" id="payCard" value="card">
+            <label class="form-check-label text-light" for="payCard">Visa / Mastercard</label>
+          </div>
+        </div>
+
+        <!-- Final Submission Button links to custom orange hover animations -->
+        <button type="submit" class="btn btn-orange w-100 py-2 fs-5">Proceed to Checkout</button>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white text-center py-4 mt-auto border-top border-secondary">
+    <div class="container">
+      <p class="mb-2">&copy; 2026 PARTYALLNIGHT. All rights reserved.</p>
+      <p class="mb-0 small">
+        <a href="index.html" class="text-white text-decoration-none mx-2">Home</a> |
+        <a href="events.html" class="text-white text-decoration-none mx-2">Events</a> |
+        <a href="booking.html" class="text-white text-decoration-none mx-2">Booking</a> |
+        <a href="about.html" class="text-white text-decoration-none mx-2">About</a> |
+        <a href="gallery.html" class="text-white text-decoration-none mx-2">Gallery</a> |
+        <a href="faq.html" class="text-white text-decoration-none mx-2">FAQ</a> |
+        <a href="support.html" class="text-white text-decoration-none mx-2">Support</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
