@@ -40,7 +40,7 @@ body {
   min-height: 60vh;
   /* Uses your uploaded file 'da clurb.jpeg' with an overlay so text stays readable */
   background: linear-gradient(rgba(11, 9, 10, 0.7), rgba(11, 9, 10, 0.85)), 
-              url('../images/da clurb.jpeg') no-repeat center center/cover;
+              url('../images/da-clurb.jpeg') no-repeat center center/cover;
   padding: 80px 0;
 }
 
