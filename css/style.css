@@ -92,3 +92,42 @@ footer a {
 footer a:hover {
   color: var(--primary-neon) !important;
 }
+
+body{
+  overflow-x: hidden;
+}
+
+footer p {
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 50vh;
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem !important;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .gallery-img,
+  .card-img-top {
+    height: 180px;
+  }
+
+}
+
+@media (max-width: 576px){
+
+  .navbar-brand{
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+}
